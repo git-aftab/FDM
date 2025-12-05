@@ -1,12 +1,27 @@
-#Frequency Division Multiplexing
-#Aim:
+<h1>Frequency Division Multiplexing</h1>
+
+<h3>Aim:</h3>
+
 To study and implement Frequency Division Multiplexing (FDM) and Demultiplexing using SCILAB by combining six different message signals into a single composite signal for transmission and then recovering each message signal at the receiver through demodulation and filtering.
-Apparatus Required:
+
+<h3>Apparatus Required:</h3>
 Computer system with SCILAB software installed.
-#Theory:
+
+<h3>Theory:</h3>
 Frequency Division Multiplexing (FDM) is a technique in which multiple message signals are transmitted simultaneously over a single communication channel by assigning each signal a unique carrier frequency. Each message is modulated with its respective carrier so that their frequency bands do not overlap. These modulated signals are then combined to form a single multiplexed signal for transmission. At the receiver end, the signal is demultiplexed by using the same carrier frequencies for demodulation, followed by low-pass filtering to recover the original baseband signals. FDM is widely used in radio broadcasting, cable television, and satellite communication systems where efficient bandwidth utilization is essential.
-#Algorithm:
-1.Start the program and initialize the sampling frequency fs and time vector t. 2.Generate six message signals of different frequencies (150 Hz to 900 Hz) using sine functions. 3.Assign six distinct carrier frequencies (3 kHz to 13 kHz) to each message signal to avoid overlap. 4.Modulate each message signal by multiplying it with its corresponding carrier (Amplitude Modulation). 5.Add all modulated signals to obtain the combined FDM signal representing multiple channels. 6.Plot all six message signals and the multiplexed signal for observation. 7.Demodulate each signal by multiplying the FDM signal with its corresponding carrier frequency. 8.Apply a low-pass filter to extract the original baseband signals (recovering the messages). 9.Plot the demodulated signals to verify successful recovery. 10.End the program after confirming proper multiplexing and demultiplexing operation.
+
+<h3>#Algorithm:</h3>
+
+1.Start the program and initialize the sampling frequency fs and time vector t. 
+2.Generate six message signals of different frequencies (150 Hz to 900 Hz) using sine functions. 
+3.Assign six distinct carrier frequencies (3 kHz to 13 kHz) to each message signal to avoid overlap. 
+4.Modulate each message signal by multiplying it with its corresponding carrier (Amplitude Modulation). 
+5.Add all modulated signals to obtain the combined FDM signal representing multiple channels.
+6.Plot all six message signals and the multiplexed signal for observation. 
+7.Demodulate each signal by multiplying the FDM signal with its corresponding carrier frequency. 
+8.Apply a low-pass filter to extract the original baseband signals (recovering the messages). 
+9.Plot the demodulated signals to verify successful recovery. 
+10.End the program after confirming proper multiplexing and demultiplexing operation.
 
 #Code:
 ```
